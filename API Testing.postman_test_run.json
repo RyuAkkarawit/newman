@@ -1,0 +1,206 @@
+{
+	"id": "e2921a7f-8b5f-4f77-9586-84e4564e35d0",
+	"name": "API Testing",
+	"timestamp": "2024-09-13T09:47:03.980Z",
+	"collection_id": "38324431-d6c1f148-416f-4194-af5c-0bd545c3169f",
+	"folder_id": 0,
+	"environment_id": "38324431-c6ef3c34-1ba5-4d7d-bdf1-7a3ddf105f70",
+	"totalPass": 14,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-09-13T09:47:01.431Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "98a60ec1-5026-4b0c-9734-1fd3175eab71",
+			"name": "GET posts",
+			"url": "https://jsonplaceholder.typicode.com/posts",
+			"time": 83,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Respond Body is success": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respond Body is success": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				83
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Respond Body is success": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "e62ac970-ff13-4125-8986-bcb1c2b7fe19",
+			"name": "post",
+			"url": "https://jsonplaceholder.typicode.com/posts",
+			"time": 757,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Successful POST request": true,
+				"Status code name has string": true,
+				"Respond body success": true,
+				"Response time is less than 850ms": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respond body success": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 850ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				757
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Successful POST request": true,
+					"Status code name has string": true,
+					"Respond body success": true,
+					"Response time is less than 850ms": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "aeed8144-2416-4218-a4ee-4c93ca5e26e4",
+			"name": "Put Request",
+			"url": "https://jsonplaceholder.typicode.com/posts/1",
+			"time": 776,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Respond body title": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respond body title": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				776
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Respond body title": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "e62b6621-40a0-4406-a490-7c2f7765c773",
+			"name": "Delete Request",
+			"url": "https://jsonplaceholder.typicode.com/posts/1",
+			"time": 273,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Respond body is {}": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respond body is {}": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				273
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Respond body is {}": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1889,
+	"collection": {
+		"requests": [
+			{
+				"id": "98a60ec1-5026-4b0c-9734-1fd3175eab71",
+				"method": "GET"
+			},
+			{
+				"id": "e62ac970-ff13-4125-8986-bcb1c2b7fe19",
+				"method": "POST"
+			},
+			{
+				"id": "aeed8144-2416-4218-a4ee-4c93ca5e26e4",
+				"method": "PUT"
+			},
+			{
+				"id": "e62b6621-40a0-4406-a490-7c2f7765c773",
+				"method": "DELETE"
+			}
+		]
+	}
+}
